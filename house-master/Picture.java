@@ -62,13 +62,24 @@ public class Picture
         sun.moveHorizontal(110);
         sun.changeSize(50);
         sun.makeVisible();
-        sun.slowMoveVertical(100);
+        
      
        
         
  
     }
-
+    /**
+     * Move the sun.
+     */
+    public void moveSun()
+    {
+      sun.slowMoveVertical(100);
+        
+     
+       
+        
+ 
+    }
     /**
      * Change this picture to black/white display
      */
