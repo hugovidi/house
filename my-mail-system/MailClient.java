@@ -29,6 +29,7 @@ public class MailClient
     
     public void printNextmailItem()
     {
+       // revisar debido a dudas
         MailItem item = server.getNextMailItem(user);
             if(item == null) 
             {
