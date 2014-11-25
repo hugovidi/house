@@ -48,6 +48,7 @@ public class MailItem
     
     public void print()
     {
+    // instance variables - replace the example below with your own
      System.out.println("From: " + from);
      System.out.println("To: " + to);
      System.out.println("Message: " + message);
