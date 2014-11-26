@@ -14,11 +14,12 @@ public class MailClient
     /**
      * Constructor for objects of class MailClient
      */
-    public MailClient(MailServer Server, String User)
+    public MailClient(MailServer server, String user)
     {
         // initialise instance variables
-        this.server = Server;
-        this.user = User;
+        this.server = server;
+        this.user = user;
+        
     }
 
    
@@ -41,9 +42,9 @@ public class MailClient
             }
     }
     
-    public void sendMailItem(String to, String message)
+    public void sendMailItem(String to, String message, String subject)
     {
-        MailItem item = new MailItem(user, to, message);
+        MailItem item = new MailItem(user, to, message, subject);
         server.post(item);
     }
 }
