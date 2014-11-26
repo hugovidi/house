@@ -14,11 +14,11 @@ public class MailClient
     /**
      * Constructor for objects of class MailClient
      */
-    public MailClient(MailServer newServer, String newUser)
+    public MailClient(MailServer Server, String User)
     {
         // initialise instance variables
-        server = newServer;
-        user = newUser;
+        this.server = Server;
+        this.user = User;
     }
 
    
@@ -27,7 +27,7 @@ public class MailClient
         return server.getNextMailItem(user);
     }
     
-    public void printNextmailItem()
+    public void printNextMailItem()
     {
        // revisar debido a dudas
         MailItem item = server.getNextMailItem(user);

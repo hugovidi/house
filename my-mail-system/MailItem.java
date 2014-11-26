@@ -16,12 +16,12 @@ public class MailItem
     /**
      * Constructor for objects of class MailItem
      */
-    public MailItem(String newFrom, String newTo, String newMessage)
+    public MailItem(String from, String to, String message)
     {
         // initialise instance variables
-        from = newFrom;
-        to = newTo;
-        message = newMessage;
+        this.from = from;
+        this.to = to;
+        this.message = message;
     }
 
     /**
