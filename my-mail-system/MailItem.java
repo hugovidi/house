@@ -43,9 +43,15 @@ public class MailItem
      return to;
     }
     
+    
     public String getMessage()
     {
      return message;
+    }
+    
+    public String getSubject()
+    {
+     return subject;
     }
     
     public void print()

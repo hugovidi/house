@@ -52,4 +52,14 @@ public class MailClient
     {
         return server.howManyMailItems(user);
     }
+    
+    public void getNextMailItemAndAutorespond()
+    {
+        MailItem msg = server.getNextMailItem(user);
+        String from = msg.getFrom();
+        String subject = "RE: " + msg.getSubject();
+        String message = "Estoy de vacaciones" + "\n" + msg.getMessage();
+        MailItem mail = new MailItem(user, from, subject, message);
+        server.post(mail);
+    }
 }
